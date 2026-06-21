@@ -8,6 +8,11 @@
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@pipeline().parameters.loopinput",
+						"type": "Expression"
+					},
+					"isSequential": true,
 					"activities": [
 						{
 							"name": "AzureSQLtoLake",
@@ -141,7 +146,7 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"variableName": "loopinput",
+								"variableName": "current",
 								"value": {
 									"value": "@utcNow()",
 									"type": "Expression"
