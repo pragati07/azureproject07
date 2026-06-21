@@ -62,7 +62,8 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"schema": "dbo",
-							"table": "DimUser"
+							"table": "DimUser",
+							"cdc": "updated_at"
 						}
 					}
 				],
@@ -113,7 +114,8 @@
 							"folder": "cdc",
 							"file": "cdc.json"
 						}
-					}
+					},
+					"firstRowOnly": false
 				}
 			},
 			{
